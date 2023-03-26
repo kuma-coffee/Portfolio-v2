@@ -11,72 +11,36 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: { primaryBlue: "#231955", primaryGrey: "#f5f5f5" },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="./index.css" />
     <title>Portofolio Website</title>
   </head>
   <body>
-    <header
-      class="w-full fixed top-0 z-10 px-4 text-white bg-primaryBlue flex justify-center"
-    >
-      <nav class="container py-3 flex justify-between flex-col md:flex-row">
-        <div class="header-left flex justify-between lg:justify-center">
-          <a class="cursor-pointer" href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/84769174?s=64&v=4"
-              alt="logo"
-              class="logo w-4/5 rounded-full"
-            />
-          </a>
-          <span class="cursor-pointer md:hidden flex items-center">
-            <i
-              class="fa-solid fa-bars fa-2x"
-              name="menu"
-              onclick="Menu(this)"
-            ></i>
-          </span>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img
+            src="https://avatars.githubusercontent.com/u/84769174?s=64&v=4"
+            alt="logo"
+            class="logo"
+          />
         </div>
-        <ul
-          class="header-right text-white font-bold opacity-0 md:opacity-100 md:flex md:items-center md:static absolute mt-14 md:m-0 w-full md:w-auto bg-primaryBlue left-0 text-center -top-60"
-        >
-          <li href="#" class="about list-none leading-10 px-6">About</li>
-          <li href="#" class="portofolio list-none leading-10 px-6">
-            Portofolio
-          </li>
-          <li href="#" class="contact-me list-none leading-10 px-6">
-            Contact Me
-          </li>
-        </ul>
-      </nav>
+        <div class="header-right">
+          <a href="#" class="about">About</a>
+          <a href="#" class="portofolio">Portofolio</a>
+          <a href="#" class="contact-me">Contact Me</a>
+        </div>
+      </div>
     </header>
     <main>
-      <div
-        class="top-wrapper py-24 mt-16 flex justify-center text-white bg-primaryBlue md:p-60 md:m-0"
-      >
-        <div
-          class="container flex justify-between flex-col-reverse items-center lg:flex-row lg:w-2/3"
-        >
-          <div
-            class="top-left flex flex-col justify-center w-2/3 py-4 text-center pt-12 lg:pt-0 lg:text-left"
-          >
-            <div
-              class="location flex flex-row items-center justify-center lg:justify-start"
-            >
-              <i class="fa-solid fa-location-dot pr-2"></i>
+      <div class="top-wrapper">
+        <div class="container">
+          <div class="top-left">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
               <p>Malang, Indonesia</p>
             </div>
-            <h1 class="text-3xl sm:text-4xl font-medium pt-1">
-              Hello, I'm Daniel Rengga
-            </h1>
-            <p class="my-4">
+            <h1>Hello, I'm Daniel Rengga</h1>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
               perferendis eum aut. Magni quae ratione vero itaque temporibus
               eaque iusto molestiae. Velit quasi eius aliquam cupiditate nam
@@ -85,7 +49,6 @@
             <a
               href="https://www.linkedin.com/in/daniel-rengga-022335210/"
               target="_blank"
-              class="no-underline"
               ><i class="fa-brands fa-linkedin"></i> Linkedin</a
             >
           </div>
@@ -93,15 +56,14 @@
             <img
               src="https://raw.githubusercontent.com/kuma-coffee/My-Portfolio/main/assets/img/profile.jpg"
               alt="Profile Image"
-              class="border rounded-full h-44 md:h-72"
             />
           </div>
         </div>
       </div>
-      <div class="about-me py-20 md:p-28 flex justify-center bg-primaryGrey">
-        <div class="container w-9/12">
-          <h1 class="text-3xl sm:text-4xl font-medium my-4">About me</h1>
-          <p class="text-justify">
+      <div class="about-me">
+        <div class="container">
+          <h1>About me</h1>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
             culpa laboriosam ratione expedita numquam, dolorem, dolorum ad
             voluptatibus id autem fugit necessitatibus quo nesciunt quae
@@ -117,26 +79,21 @@
           </p>
         </div>
       </div>
-      <div class="middle-wrapper py-10 lg:px-10 flex flex-wrap justify-center">
-        <div class="container md:w-9/12">
+      <div class="middle-wrapper">
+        <div class="container">
           <div class="title">
-            <h1 class="p-4 text-3xl sm:text-4xl font-medium text-center">
-              Check out My Portofolio
-            </h1>
+            <h1>Check out My Portofolio</h1>
           </div>
-
-          <section
-            class="portofolio grid justify-center items-center gap-3 py-4 lg:grid-flow-col"
-          >
-            <div class="portofolio-left px-8 py-4">
+          <section class="portofolio">
+            <div class="portofolio-left">
               <img
                 src="https://raw.githubusercontent.com/kuma-coffee/My-Portfolio/main/assets/img/my-laundry.png"
                 alt="MyLaundry Image"
               />
             </div>
-            <div class="portofolio-right px-8 py-4">
-              <h2 class="text-xl sm:text-2xl font-medium">MyLaundry</h2>
-              <p class="my-4 text-justify">
+            <div class="portofolio-right">
+              <h2>MyLaundry</h2>
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt aperiam maiores amet soluta voluptatum cupiditate sequi
                 ducimus rem, at cumque tempore sunt nisi praesentium laboriosam.
@@ -146,26 +103,21 @@
                 totam ullam odit voluptate tenetur vel repellendus temporibus,
                 illo dolorem quasi!
               </p>
-              <a
-                href="https://my-laundry.onrender.com/"
-                target="_blank"
-                class="px-3 py-3 text-white text-sm font-bold rounded-md bg-primaryBlue"
+              <a href="https://my-laundry.onrender.com/" target="_blank"
                 >Check out the website</a
               >
             </div>
           </section>
-          <section
-            class="portofolio grid justify-center items-center gap-3 py-4 lg:grid-flow-col"
-          >
-            <div class="portofolio-left px-8 py-4">
+          <section class="portofolio">
+            <div class="portofolio-left">
               <img
                 src="https://raw.githubusercontent.com/kuma-coffee/My-Portfolio/main/assets/img/inphone.png"
                 alt="InPhone Image"
               />
             </div>
-            <div class="portofolio-right px-8 py-4">
-              <h2 class="text-xl sm:text-2xl font-medium">InPhone</h2>
-              <p class="my-4 text-justify">
+            <div class="portofolio-right">
+              <h2>InPhone</h2>
+              <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aut
                 repudiandae quidem libero at? Maxime recusandae, odit odio ea
                 quasi mollitia, molestiae molestias voluptate officia
@@ -174,26 +126,21 @@
                 distinctio fugit quidem similique at error maxime, voluptas quod
                 unde. Dolorem ab consequatur, neque eveniet quod fuga.
               </p>
-              <a
-                href="https://kuma-coffee.github.io/InPhone/"
-                target="_blank"
-                class="px-3 py-3 text-white text-sm font-bold rounded-md bg-primaryBlue"
+              <a href="https://kuma-coffee.github.io/InPhone/" target="_blank"
                 >Check out the website</a
               >
             </div>
           </section>
-          <section
-            class="portofolio grid justify-center items-center gap-3 py-4 lg:grid-flow-col"
-          >
-            <div class="portofolio-left px-8 py-4">
+          <section class="portofolio">
+            <div class="portofolio-left">
               <img
                 src="https://raw.githubusercontent.com/kuma-coffee/My-Portfolio/main/assets/img/techInfo.png"
                 alt="Tech  Info Image"
               />
             </div>
-            <div class="portofolio-right px-8 py-4">
-              <h2 class="text-xl sm:text-2xl font-medium">Tech Info</h2>
-              <p class="my-4 text-justify">
+            <div class="portofolio-right">
+              <h2>Tech Info</h2>
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
                 nihil doloremque sed, porro soluta, provident corporis veniam
                 asperiores culpa quis aliquam maxime aliquid tempora a quae qui
@@ -203,71 +150,33 @@
                 laborum voluptatum, repellendus necessitatibus facilis. Illum,
                 at tempora?
               </p>
-              <a
-                href="https://web-laptop.netlify.app/"
-                target="_blank"
-                class="px-3 py-3 text-white text-sm font-bold rounded-md bg-primaryBlue"
+              <a href="https://web-laptop.netlify.app/" target="_blank"
                 >Check out the website</a
               >
             </div>
           </section>
         </div>
       </div>
-      <div
-        class="bottom-wrapper py-10 md:px-10 flex justify-center bg-primaryGrey"
-      >
-        <div class="container flex flex-col items-center lg:w-9/12">
-          <h1 class="my-4 text-3xl sm:text-4xl font-medium text-center">
-            Contact me
-          </h1>
-          <form action="#" class="flex flex-col w-3/5">
-            <label for="name" class="my-3">Your Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="p-3 text-sm rounded-md border border-solid border-primaryBlue"
-            />
-            <label for="email" class="my-3">Your Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="p-3 text-sm rounded-md border border-solid border-primaryBlue"
-            />
-            <label for="message" class="my-3">Your message</label>
+      <div class="bottom-wrapper">
+        <div class="container">
+          <h1>Contact me</h1>
+          <form action="#">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Your message</label>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="10"
-              class="p-3 text-sm rounded-md border border-solid border-primaryBlue"
             ></textarea>
-            <button
-              type="submit"
-              class="mt-8 p-3 text-sm font-bold text-white rounded-md bg-primaryBlue"
-            >
-              Send
-            </button>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
     </main>
-    <footer class="py-2 text-center text-white bg-primaryBlue">
-      <p>&copy; 2023 Copyright kuma-coffee Inc.</p>
-    </footer>
-    <script>
-      function Menu(e) {
-        let list = document.querySelector(".header-right");
-
-        e.name === "menu"
-          ? ((e.name = "close"),
-            list.classList.remove("opacity-0"),
-            list.classList.remove("-top-60"))
-          : ((e.name = "menu"),
-            list.classList.add("opacity-100"),
-            list.classList.add("-top-60"));
-      }
-    </script>
+    <footer><p>&copy; 2023 Copyright kuma-coffee Inc.</p></footer>
   </body>
 </html>

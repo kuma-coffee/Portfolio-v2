@@ -1,12 +1,12 @@
 {
-	"name": "be-basic-html-css-fcp",
+	"name": "be-basic-html-css-assignment-1",
 	"course": "Basic Frontend Web Development With HTML \u0026 CSS",
-	"title": "BASIC BE HTML CSS - FCP",
-	"order": 3,
+	"title": "HTML CSS Assignment 1",
+	"order": 2,
 	"topics": null,
 	"image": "jest-html-css",
 	"command": "npm run test",
-	"totalTestCase": 6,
+	"totalTestCase": 8,
 	"metadata": {
 		"type": "assignment"
 	}
