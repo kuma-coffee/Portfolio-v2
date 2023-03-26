@@ -1,2 +1,5 @@
 # Portfolio-v2
-Basic FE with HTML &amp; CSS Final Project - Ruangguru | Kampus Merdeka #ruangguru #msib #kampusmerdeka
+Portfolio made for Basic FE with HTML &amp; CSS Final Project at Ruangguru
+Made using Tailwind
+
+#ruangguru #msib #kampusmerdeka
